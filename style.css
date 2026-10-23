@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    padding: 15px 25px 25px; /* Reducido el padding superior a 15px */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* LOGO MÁS COMPACTO Y PEGADO A LA FRASE */
+.logo {
+    display: block;
+    width: 150px; /* Tamaño ajustado del logo */
+    height: auto;
+    margin: 0 auto 0px; /* Sin margen inferior */
+}
+
+/* FRASE PEGASsA AL LOGO Y AL TÍTULO */
+.frase-slogan {
+    display: block;
+    max-width: 250px; /* Ancho ajustado para reducir la altura de la imagen */
+    width: 75%;
+    height: auto;
+    margin: -8px auto 5px; /* Margen negativo arriba para pegarla al logo verde */
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 3px; /* Espacio mínimo con el slogan textual */
+}
+
+.slogan {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* BOTONES */
+.btn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* Redes */
+.instagram { background: #e1306c; }
+.tiktok { background: #000000; }
+.facebook { background: #1877f2; }
+.whatsapp { background: #25d366; }
+.youtube { background: #ff0000; }
+
+/* Catálogos simples */
+.catalogo {
+    background: #6f7ce2;
+}
+
+/* APARTADO CON IMAGEN (CONVERTIDO EN BOTÓN) */
+.apartado {
+    display: block;
+    height: 120px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efectos al pasar el mouse por encima del banner */
+.apartado:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+/* Efecto al hacer clic */
+.apartado:active {
+    transform: scale(0.98);
+}
+
+/* SOLO FOAMY TERMOFORMADO */
+.foamy {
+    background-image: url("img/fom.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* SOLO RESINA */
+.resina {
+    background-image: url("img/res.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* SOLO PORCELANA */
+.porcelana {
+    background-image: url("img/por.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Línea */
+hr {
+    margin: 15px 0;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.titulo-seccion {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4a5568;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 12px 0;
+    position: relative;
+}
